@@ -13,6 +13,10 @@
 		63956866228915AF00293345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63956865228915AF00293345 /* Assets.xcassets */; };
 		63956869228915AF00293345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63956867228915AF00293345 /* LaunchScreen.storyboard */; };
 		6395686C228915AF00293345 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395686B228915AF00293345 /* main.m */; };
+		6395687822891DCF00293345 /* HZXChineseSortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395687722891DCF00293345 /* HZXChineseSortTool.m */; };
+		6395687C22891F4E00293345 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395687B22891F4E00293345 /* TimeViewController.m */; };
+		6395687F22891F6400293345 /* ChineseSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6395687E22891F6400293345 /* ChineseSortViewController.m */; };
+		639568822289431600293345 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639568812289431600293345 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,14 @@
 		63956868228915AF00293345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6395686A228915AF00293345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6395686B228915AF00293345 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63956873228916CE00293345 /* HZXTimeManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZXTimeManagerTool.h; sourceTree = "<group>"; };
-		63956874228916CF00293345 /* HZXTimeManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZXTimeManagerTool.m; sourceTree = "<group>"; };
+		6395687622891DCF00293345 /* HZXChineseSortTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZXChineseSortTool.h; sourceTree = "<group>"; };
+		6395687722891DCF00293345 /* HZXChineseSortTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZXChineseSortTool.m; sourceTree = "<group>"; };
+		6395687A22891F4E00293345 /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		6395687B22891F4E00293345 /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		6395687D22891F6400293345 /* ChineseSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChineseSortViewController.h; sourceTree = "<group>"; };
+		6395687E22891F6400293345 /* ChineseSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChineseSortViewController.m; sourceTree = "<group>"; };
+		639568802289431600293345 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		639568812289431600293345 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,15 @@
 		6395685B228915AE00293345 /* ManagerTool */ = {
 			isa = PBXGroup;
 			children = (
+				6395687522891DAD00293345 /* 汉语排序 */,
 				63956872228915BE00293345 /* 时间管理 */,
 				6395685C228915AE00293345 /* AppDelegate.h */,
 				6395685D228915AE00293345 /* AppDelegate.m */,
 				6395685F228915AE00293345 /* ViewController.h */,
 				63956860228915AE00293345 /* ViewController.m */,
+				639568802289431600293345 /* MainViewController.h */,
+				639568812289431600293345 /* MainViewController.m */,
+				6395687922891F2500293345 /* controller */,
 				63956862228915AE00293345 /* Main.storyboard */,
 				63956865228915AF00293345 /* Assets.xcassets */,
 				63956867228915AF00293345 /* LaunchScreen.storyboard */,
@@ -77,10 +91,28 @@
 		63956872228915BE00293345 /* 时间管理 */ = {
 			isa = PBXGroup;
 			children = (
-				63956873228916CE00293345 /* HZXTimeManagerTool.h */,
-				63956874228916CF00293345 /* HZXTimeManagerTool.m */,
 			);
 			path = "时间管理";
+			sourceTree = "<group>";
+		};
+		6395687522891DAD00293345 /* 汉语排序 */ = {
+			isa = PBXGroup;
+			children = (
+				6395687622891DCF00293345 /* HZXChineseSortTool.h */,
+				6395687722891DCF00293345 /* HZXChineseSortTool.m */,
+			);
+			path = "汉语排序";
+			sourceTree = "<group>";
+		};
+		6395687922891F2500293345 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6395687A22891F4E00293345 /* TimeViewController.h */,
+				6395687B22891F4E00293345 /* TimeViewController.m */,
+				6395687D22891F6400293345 /* ChineseSortViewController.h */,
+				6395687E22891F6400293345 /* ChineseSortViewController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +187,11 @@
 			files = (
 				63956861228915AE00293345 /* ViewController.m in Sources */,
 				6395686C228915AF00293345 /* main.m in Sources */,
+				6395687822891DCF00293345 /* HZXChineseSortTool.m in Sources */,
 				6395685E228915AE00293345 /* AppDelegate.m in Sources */,
+				639568822289431600293345 /* MainViewController.m in Sources */,
+				6395687F22891F6400293345 /* ChineseSortViewController.m in Sources */,
+				6395687C22891F4E00293345 /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
