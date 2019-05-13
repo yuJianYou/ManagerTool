@@ -82,19 +82,8 @@
     return nil;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
-        case 0:
-        {
-            TimeViewController *VC = [[TimeViewController alloc] init];
-            [self.navigationController pushViewController:VC animated:YES];
-        }
-            break;
-            
-        default:
-            break;
-    }
-//    NSString *vcName = self.toolVCNameArray[indexPath.row];
-//    id vvcc = [[NSClassFromString(vcName) alloc] init];
-//    [self.navigationController pushViewController:vvcc animated:YES];
+    NSString *vcName = self.toolVCNameArray[indexPath.row];
+    id vvcc = [[NSClassFromString(vcName) alloc] init];
+    [self.navigationController pushViewController:vvcc animated:YES];
 }
 @end
